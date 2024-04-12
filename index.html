@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Encryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Message Encryption</h1>
+        <form action="/encrypt" method="post">
+            <textarea name="message" placeholder="Enter your message to encrypt"></textarea>
+            <button type="submit">Encrypt</button>
+        </form>
+        <form action="/decrypt" method="post">
+            <textarea name="message" placeholder="Enter your message to decrypt"></textarea>
+            <button type="submit">Decrypt</button>
+        </form>
+    </div>
+</body>
+</html>
